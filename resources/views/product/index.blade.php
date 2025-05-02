@@ -20,7 +20,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h4 class="card-title">Default Datatable</h4>
+                        <h4 class="card-title">Daftar Produk</h4>
                         <a class="btn btn-primary" href="{{ route('products.create') }}">Tambah data
                         </a>
                     </div>
