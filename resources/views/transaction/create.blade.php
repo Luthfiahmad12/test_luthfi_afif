@@ -19,7 +19,7 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Produk</label>
-                            <select class="form-select" name="product_id" aria-label="Default select example">
+                            <select class="select2 form-control select2-multiple" multiple="multiple" name="product_id">
                                 <option value="" selected></option>
                                 @foreach ($products as $item)
                                     <option value="{{ $item->id }}">{{ $item->name }}</option>
@@ -34,7 +34,7 @@
                         </div>
 
                         <div class="d-flex justify-content-end gap-4">
-                            <a href="{{ route('products.index') }}" class="btn btn-danger">Kembali</a>
+                            <a href="{{ route('transaction.index') }}" class="btn btn-danger">Kembali</a>
                             <button type="submit" class="btn btn-success">Submit</button>
                         </div>
                     </form>
@@ -42,4 +42,13 @@
             </div>
         </div>
     </div>
+
+    @push('styles')
+        <link href="{{ asset('assets/libs/select2/css/select2.min.css') }}" rel="stylesheet" type="text/css" />
+    @endpush
+
+    @push('scripts')
+        <script src="{{ asset('assets/libs/select2/js/select2.min.js') }}"></script>
+        <script src="{{ asset('assets/js/pages/form-advanced.init.js') }}"></script>
+    @endpush
 </x-app-layout>

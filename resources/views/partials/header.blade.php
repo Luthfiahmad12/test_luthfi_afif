@@ -2,7 +2,6 @@
     <div class="navbar-header">
         <div class="container-fluid">
             <div class="float-end">
-
                 <div class="dropdown d-inline-block d-lg-none ms-2">
                     <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -29,32 +28,16 @@
                 <div class="dropdown d-none d-sm-inline-block">
                     <button type="button" class="btn header-item waves-effect" data-bs-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
-                        <img class="" src="assets/images/flags/us.jpg" alt="Header Language" height="16">
+                        <img class="" src="{{ asset('assets/images/flags/us.jpg') }}" alt="Header Language"
+                            height="16">
                     </button>
                     <div class="dropdown-menu dropdown-menu-end">
 
                         <!-- item-->
                         <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12">
+                            <img src="{{ asset('assets/images/flags/spain.jpg') }}" alt="user-image" class="me-1"
+                                height="12">
                             <span class="align-middle">Spanish</span>
-                        </a>
-
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12">
-                            <span class="align-middle">German</span>
-                        </a>
-
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12">
-                            <span class="align-middle">Italian</span>
-                        </a>
-
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12">
-                            <span class="align-middle">Russian</span>
                         </a>
                     </div>
                 </div>
@@ -156,8 +139,8 @@
                 <div class="dropdown d-inline-block">
                     <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-2.jpg"
-                            alt="Header Avatar">
+                        <img class="rounded-circle header-profile-user"
+                            src="{{ asset('assets/images/users/avatar-2.jpg') }}" alt="Header Avatar">
                         <span class="d-none d-xl-inline-block ms-1">{{ auth()->user()->name }}</span>
                         <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                     </button>
@@ -190,19 +173,19 @@
                 <div class="navbar-brand-box">
                     <a href="index.html" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt="" height="20">
+                            <img src="{{ asset('assets/images/logo-sm.png') }}" alt="" height="20">
                         </span>
                         <span class="logo-lg">
-                            <img src="assets/images/logo-dark.png" alt="" height="17">
+                            <img src="{{ asset('assets/images/logo-dark.png') }}" alt="" height="17">
                         </span>
                     </a>
 
                     <a href="index.html" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt="" height="20">
+                            <img src="{{ asset('assets/images/logo-sm.png') }}" alt="" height="20">
                         </span>
                         <span class="logo-lg">
-                            <img src="assets/images/logo-light.png" alt="" height="19">
+                            <img src="{{ asset('assets/images/logo-light.png') }}" alt="" height="19">
                         </span>
                     </a>
                 </div>
@@ -229,7 +212,6 @@
                     <div class="dropdown-menu dropdown-megamenu">
                         <div class="row">
                             <div class="col-sm-6">
-
                                 <div class="row">
                                     <div class="col-md-4">
                                         <h5 class="font-size-14 mt-0">UI Components</h5>
@@ -308,82 +290,6 @@
                                             </li>
 
                                         </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h5 class="font-size-14 mt-0">Components</h5>
-                                        <div class="px-lg-2">
-                                            <div class="row g-0">
-                                                <div class="col">
-                                                    <a class="dropdown-icon-item" href="#">
-                                                        <img src="assets/images/brands/github.png" alt="Github">
-                                                        <span>GitHub</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col">
-                                                    <a class="dropdown-icon-item" href="#">
-                                                        <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
-                                                        <span>Bitbucket</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col">
-                                                    <a class="dropdown-icon-item" href="#">
-                                                        <img src="assets/images/brands/dribbble.png" alt="dribbble">
-                                                        <span>Dribbble</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="row g-0">
-                                                <div class="col">
-                                                    <a class="dropdown-icon-item" href="#">
-                                                        <img src="assets/images/brands/dropbox.png" alt="dropbox">
-                                                        <span>Dropbox</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col">
-                                                    <a class="dropdown-icon-item" href="#">
-                                                        <img src="assets/images/brands/mail_chimp.png"
-                                                            alt="mail_chimp">
-                                                        <span>Mail Chimp</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col">
-                                                    <a class="dropdown-icon-item" href="#">
-                                                        <img src="assets/images/brands/slack.png" alt="slack">
-                                                        <span>Slack</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6">
-                                        <div>
-                                            <div class="card text-white mb-0 overflow-hidden text-white-50"
-                                                style="background-image: url('assets/images/megamenu-img.png');background-size: cover;">
-                                                <div class="card-img-overlay"></div>
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-xl-6">
-                                                            <h4 class="text-white mb-3">Sale</h4>
-
-                                                            <h5 class="text-white-50">Up to <span
-                                                                    class="font-size-24 text-white">50 %</span> Off
-                                                            </h5>
-                                                            <p>At vero eos accusamus et iusto odio.</p>
-                                                            <div class="mb-4">
-                                                                <a href="#" class="btn btn-success btn-sm">View
-                                                                    more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
